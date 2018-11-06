@@ -16,7 +16,7 @@ extra-source-files:  ChangeLog.md
 cabal-version:       >=1.10
 
 flag develop
-  description: Enable 'fail on error' compiler flags
+  description: Enable warnings and treat then as error.
   default:     False
   manual:      True
 
