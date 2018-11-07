@@ -3,17 +3,21 @@
 
 name:                utfnf
 version:             0.1.0.0
--- synopsis:
--- description:
+synopsis:            cli tool to normalize unicode input.
+description:         cli tool to normalize unicode input to NFD, NFC, NFKC or NFKD.
 license:             BSD3
 license-file:        LICENSE
 author:              Alexander Ben Nasrallah
 maintainer:          me@abn.sh
--- copyright:
--- category:
+copyright:           (c) 2018 Alexander Ben Nasrallah
+category:            Development
 build-type:          Simple
 extra-source-files:  ChangeLog.md
 cabal-version:       >=1.10
+
+source-repository head
+  type:     git
+  location: https://github.com/neosimsim/utfnf.git
 
 flag develop
   description: Enable warnings and treat then as error.
@@ -24,7 +28,7 @@ executable utfnf
   main-is:             Main.hs
   -- other-modules:
   -- other-extensions:
-  build-depends:       base >=4.12 && <4.13, text >=1.2 && <1.3, unicode-transforms, optparse-applicative
+  build-depends:       base >=4.11 && <4.13, text >=1.2 && <1.3, unicode-transforms, optparse-applicative
   -- hs-source-dirs:
   default-language:    Haskell2010
   if flag(develop)
