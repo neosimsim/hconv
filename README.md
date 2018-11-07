@@ -1,4 +1,4 @@
-# utfnf
+# hconv
 Simple tool to normalize an Unicode input to
 
 - NFC
